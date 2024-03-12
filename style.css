@@ -1,0 +1,438 @@
+@font-face {
+  font-family: GTBold;
+  src: url(Assets/Fonts/gt-walsheim-bold-webfont_57eecc0f.ttf);
+}
+
+@font-face {
+  font-family: GTLight;
+  src: url(Assets/Fonts/gt-walsheim-light-webfont_c67b5683.ttf);
+}
+
+@font-face {
+  font-family: WebFont;
+  src: url(Assets/Fonts/gtwalsheim-webfont_d226e42d.ttf);
+}
+
+@font-face {
+  font-family: NoFont;
+  src: url(Assets/Fonts/nocturne_serif_light-webfont_27b0624d.ttf);
+}
+
+@font-face {
+  font-family: NoFontR;
+  src: url(Assets/Fonts/nocturneserif-regular-webfont_ed72459b.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: NoFontR;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.one {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: slateblue;
+  overflow: hidden;
+}
+
+.text-area-1 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.29);
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 5vw;
+}
+
+nav svg {
+  width: 3vw;
+}
+
+.cntr-nav {
+  display: flex;
+  gap: 3vw;
+}
+
+nav a {
+  color: #fff;
+  font-family: WebFont;
+}
+
+.rght-nav {
+  display: flex;
+  gap: 1vw;
+  font-size: 1.2vw;
+  color: #fff;
+}
+
+.main-txt {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-txt h1 {
+  font-size: 5vw;
+  color: #fff;
+  font-family: NoFont;
+  font-weight: 400;
+}
+
+.main-txt h3 {
+  font-size: 2.5vw;
+  color: #fff;
+  font-family: NoFont;
+  font-weight: 400;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  justify-content: center;
+}
+
+.features a {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  font-size: 1vw;
+}
+
+.features a i {
+  font-size: 1.5vw;
+}
+
+/* -----------two------------- */
+.two {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.lft-two,
+.rght-two {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+}
+
+.rght-two {
+  align-items: start;
+  gap: 5vh;
+}
+
+.main-heading {
+  font-size: 3vw;
+  font-weight: 400;
+  color: rgb(99, 29, 29);
+}
+
+.rght-two h1 {
+  margin-top: -15vh;
+}
+
+.main-p {
+  font-size: 1vw;
+  font-weight: 400;
+  width: 35vw;
+  font-family: GTLight;
+}
+
+.cta {
+  padding: 1vh 0vw;
+  font-family: WebFont;
+  color: rgb(99, 29, 29);
+  font-weight: 600;
+  letter-spacing: 0.2vw;
+  border-bottom: 1px solid transparent;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.cta:hover {
+  border-bottom: 1px solid rgb(99, 29, 29);
+}
+
+.pic-two-1 {
+  margin-top: 10vh;
+  width: 35vw;
+  height: 90vh;
+  background-image: url(https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+.pic-two-2 {
+  position: absolute;
+  bottom: -15vh;
+  left: 65%;
+  width: 40vw;
+  height: 40vh;
+  background-image: url(https://images.unsplash.com/photo-1437846972679-9e6e537be46e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ------------three------------ */
+.three {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  background-color: rgb(255, 247, 236);
+}
+
+.lft-three {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rght-three {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 5vh;
+  flex-direction: column;
+}
+
+/* -----------four----------- */
+.four {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper {
+  right: 0;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  width: 35%;
+}
+
+.slide1 {
+  background-image: url(https://images.unsplash.com/photo-1551918120-9739cb430c6d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.slide2 {
+  background-image: url(https://images.unsplash.com/photo-1536323760109-ca8c07450053?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.slide3 {
+  background-image: url(https://images.unsplash.com/photo-1553342385-111fd6bc6ab3?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.slide4 {
+  background-image: url(https://images.unsplash.com/photo-1516939884455-1445c8652f83?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.slide5 {
+  background-image: url(https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.overlay {
+  display: flex;
+  align-items: end;
+  padding: 2vw;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: linear-gradient(#00000000, #00000000, #000000);
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  padding: 2vw;
+  border-radius: 50%;
+  border: 1px solid rgb(121, 36, 36);
+  color: rgb(121, 36, 36);
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  padding: 2vw;
+  border-radius: 50%;
+  border: 1px solid rgb(121, 36, 36);
+  color: rgb(121, 36, 36);
+}
+
+.five .pic-two-2{
+    z-index: 3;
+    width: 25vw;
+    height: 25vw;
+    left: 40%;
+    bottom: -5%;
+    background-image: url(https://images.unsplash.com/photo-1520116468816-95b69f847357?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.five .pic-two-1{
+    width: 35vw;
+    height: 35vw;
+    background-image: url(https://images.unsplash.com/photo-1527605158555-853f200063e9?q=80&w=1942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.five .main-heading{
+    margin-top: 0vh;
+}
+
+/* -----------six--------------- */
+
+.six{
+    padding: 0vw 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 246, 235);
+}
+
+.head-six{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards-six{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50vh;
+}
+
+.card-p{
+    width: 25vw;
+    height: 100%;
+    background-color: rgb(248, 160, 59);
+}
+
+.card-child{
+    width: 25vw;
+    height: 100%;
+    background-color: #fff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+.card-p:hover .card-child{
+    margin-top: -1vw;
+    margin-left: -1vw;
+}
+
+.top-card-child{
+    width: 100%;
+    height: 65%;
+    background-image: url(https://www.adamsandbutler.com/app/uploads/2022/02/Cameron-House-on-Loch-Lomond-new-size-768x432.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.btm-card-child{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 1vw;
+   width: 100%;
+   height: 35%;
+}
+
+.btm-card-child p{
+    width: 90%;
+}
+
+/* ------------footer--------------- */
+
+footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    width: 100%;
+    height: 50vh;
+    background-color: #111;
+}
+
+footer a{
+    color: #fff;
+}
+
+.first-a{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    color: #fff;
+    font-size: 0.8vw;
+}
+
+.first-a h4{
+    font-size: 1vw;
+    margin-bottom: 2vh;
+}
+
+footer h3{
+    position: absolute;
+    bottom: 2%;
+    color: #fff;
+    font-family: GTBold;
+}
